@@ -6,7 +6,7 @@ You can create a `Community` from geosnap’s built-in data by passing a set of 
 constructor method
 
 ```python
-from geosnap.data import Community
+from geosnap import Community
 dc = Community.from_census(state_fips='11')
 ```
 
