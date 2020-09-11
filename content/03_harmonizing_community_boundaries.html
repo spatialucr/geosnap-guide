@@ -319,7 +319,7 @@ Loading manifest: 100%|██████████| 3/3 [00:00&lt;00:00, 2841
 </div>
 <div class="section" id="harmonization-using-areal-interpolation">
 <h2>Harmonization using Areal Interpolation<a class="headerlink" href="#harmonization-using-areal-interpolation" title="Permalink to this headline">¶</a></h2>
-<p>The simplest way to harmonize boundaries is to use areal interpolation, meaning we use the area of overlap between consecutive years to create a weighted average. This approach assumes each polygon has constant density of each attribute so its most useful when the polygons are small and homogenous</p>
+<p>The simplest way to harmonize boundaries is to use areal interpolation, meaning we use the area of overlap between consecutive years to create a weighted sum of intersecting polygons. This approach assumes each polygon has constant density of each attribute so its most useful when the polygons are small and homogenous</p>
 <p>When harmonizing boundaries over time, we need to distinguish between <a class="reference external" href="https://en.wikipedia.org/wiki/Intensive_and_extensive_properties">intensive and extensive</a> variables because each needs to be handled differently during the interpolation process. Median income is a statistic (so intensive), whereas total population is a count (extensive), so we make sure to pass each to the appropriate list</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
